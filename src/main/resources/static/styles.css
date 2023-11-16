@@ -1,0 +1,96 @@
+/* Estilos generales para el cuerpo de la página */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh; /* Establece la altura del cuerpo al 100% de la altura visible */
+}
+
+/* Estilos para los encabezados h1 */
+h1 {
+    color: #333; /* Color del texto del encabezado */
+}
+
+/* Estilos para el contenedor principal */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+}
+
+/* Estilos para contenedores específicos: formulario y tabla */
+.form-container,
+.table-container {
+    flex: 1; /* Distribuye el espacio disponible de manera equitativa entre los contenedores */
+}
+
+/* Estilos para el contenedor de botones */
+.button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+}
+
+/* Estilos para los botones dentro del contenedor de botones */
+.button-container button {
+    margin-bottom: 10px;
+}
+
+/* Estilos para los formularios en general */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* Estilos para las etiquetas en los formularios */
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+/* Estilos para los campos de entrada en los formularios */
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+/* Estilos para las tablas en general */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+/* Estilos para las celdas de encabezado y datos en las tablas */
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+/* Estilos específicos para las celdas de encabezado en las tablas */
+th {
+    background-color: #4caf50;
+    color: white;
+}
+
+/* Estilos para el formulario de edición, inicialmente oculto */
+#formularioEdicion {
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+}
+
