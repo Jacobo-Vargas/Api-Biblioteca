@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Librería</title>
+    <script src="Logica.js"></script>
+    <!-- Enlace al archivo CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<h1>Librería</h1>
+
+<div>
+    <button onclick="mostrarFormularioAgregar()">Agregar Libro</button>
+</div>
+
+<!-- Formulario de Agregar -->
+<div id="formularioAgregar" style="display: none;">
+    <h2>Agregar Libro</h2>
+    <form onsubmit="agregarLibro(event)">
+        <label for="titulo">Título:</label>
+        <input type="text" id="titulo" required><br>
+
+        <label for="autor">Autor:</label>
+        <input type="text" id="autor" required><br>
+
+        <label for="anio">Año:</label>
+        <input type="number" id="anio" required><br>
+
+        <label for="genero">Género:</label>
+        <input type="text" id="genero" required><br>
+
+        <button type="submit">Agregar</button>
+    </form>
+</div>
+
+<!-- Formulario de Edición -->
+<div id="formularioEdicion" style="display: none;">
+    <h2>Editar Libro</h2>
+    <form onsubmit="guardarCambiosLibro(event)">
+        <label for="tituloEditar">Título:</label>
+        <input type="text" id="tituloEditar" required><br>
+
+        <label for="autorEditar">Autor:</label>
+        <input type="text" id="autorEditar" required><br>
+
+        <label for="anioEditar">Año:</label>
+        <input type="number" id="anioEditar" required><br>
+
+        <label for="generoEditar">Género:</label>
+        <input type="text" id="generoEditar" required><br>
+
+        <button type="submit">Guardar cambios</button>
+    </form>
+</div>
+
+<!-- Lista de Libros -->
+<div id="listaLibros">
+    <h2>Lista de Libros</h2>
+    <table border="1" id="tablaLibros">
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Título</th>
+            <th>Autor</th>
+            <th>Año</th>
+            <th>Género</th>
+            <th>Acciones</th>
+        </tr>
+        </thead>
+        <tbody>
+        <!-- Aquí se agregan automaticamente las filas de la tabla con JavaScript -->
+        </tbody>
+    </table>
+</div>
+</body>
+</html>
