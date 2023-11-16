@@ -9,6 +9,7 @@ En el archivo [properties](src/main/resources/application.properties) se puede o
 # Api compilada
 
 El jar [Biblioteca](src/main/java/com/example/Biblioteca/Biblioteca-0.0.1-SNAPSHOT.jar)  es el ejecutable que pone en funcion la api para esto primero debe tener en cuenta el archivo de configuracion y de ser necesario compilar de nuevo el proyecto para que use la nueva oconexion y no arroje errores de inicializacion, esto ya que es de forma remota que se tiene la api, no esta creada la conexion a un DB en un servidor
+tambien se puede descargar[descargar](https://drive.google.com/drive/folders/1rEW0SsZAKPcaFV0ILigsvkKnsExYQxv5)
 
 # Ejecucion desde IntelliJ 
 
